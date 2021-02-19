@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录页面</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <div class="login-header">
+        <h1 id="link" href="javascript:;">点击登录零点购物</h1>
+    </div>
+
+    <div id="login" class="login">
+        <div id="title" class="login-title">
+            欢迎光临
+            <span>
+                <a id="closeBtn" href="javascript:void(0);" class="close-login">关闭</a>
+            </span>
+        </div>
+        <div class="login-input-content">
+            <div class="login-input">
+                <label>账号</label>
+                <input type="text" placeholder="请输入账号" name="info[username]" id="username" class="list-input">
+            </div>
+            <div class="login-input">
+                <label>密码</label>
+                <input type="password" placeholder="请输入密码" name="info[password]" id="password" class="list-input" autocomplete="off">
+                <i class="pwd-eye"><img id="img-eye" src="img/yanjing.png"></i>
+            </div>
+        </div>
+        <div id="loginBtn" class="login-button">
+            <a href="javascript:void(0);" id="login-button-submit">登陆</a>
+        </div>
+    </div>
+    
+    <!-- 遮盖层 -->
+    <div id="bg" class="login-bg"></div>
+
+    <script>
+
+        //1.获取元素
+        var login = document.querySelector('.login');
+        var mask = document.querySelector('.login-bg');
+        var link = document.querySelector('#link');
+        var closeBtn =document.querySelector('#closeBtn');
+        var title = document.querySelector('#title');
+        var eye = document.querySelector('#img-eye');
+        var pwd = document.querySelector('#password')
+        var flag = 0;
+
+        //2.点击链接就显示背景色和登录框
+        link.addEventListener('click',function(){
+            mask.style.display = 'block';
+            login.style.display = 'block';
+        })
+
+        //3.点击closeBtn 就隐藏背景色和登录框 
+        closeBtn.addEventListener('click',function(){
+            mask.style.display = 'none';
+            login.style.display = 'none';
+        })
+
+        //4.拖曳
+        //（1）当鼠标按下，获得鼠标在login盒子内的坐标
+        title.addEventListener('mousedown',function(e){
+            var x = e.pageX - login.offsetLeft;
+            var y = e.pageY - login.offsetTop;
+        //(2)鼠标移动的时候。鼠标在页面的坐标 减去 鼠标在盒子的坐标 就是 模态框的 left 和 top
+        //在页面任何位置移动鼠标 所以事件源用document
+            document.addEventListener('mousemove',move)
+            //封装函数
+            function move (e) {  //事件对象 e 千万不要漏掉它喔
+               login.style.left =  e.pageX - x + 'px';
+               login.style.top =  e.pageY - y + 'px';
+            }
+            //（3) .鼠标弹起就移除鼠标移动事件
+            document.addEventListener('mouseup',function(){
+                document.removeEventListener('mousemove',move);
+            })
+        })
+        
+        //密码小眼睛
+        eye.onclick = function () {
+            if (flag == 0) {
+                pwd.type = 'text';
+                eye.src = 'img/yanjing_1.png';
+                flag = 1;
+            }else {
+                pwd.type = 'password';
+                eye.src = 'img/yanjing.png';
+                flag = 0;
+            }
+        }
+        
+    </script>
+</body>
+</html>

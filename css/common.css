@@ -1,0 +1,261 @@
+.fl {
+    float: left;
+    
+}
+.fr {
+    float: right;
+}
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+.shortcut {
+    height: 31px;
+    background-color:#f1f1f1;
+    line-height: 31px;
+}
+.shortcut li {
+    float: left;
+}
+.style-red {
+    color: #f70c0c;
+}
+.spacer{
+    width: 1px;
+    height: 12px ;
+    background-color: #666;
+    margin: 9px 12px 0;
+}
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?f4mtxr');
+    src:  url('../fonts/icomoon.eot?f4mtxr#iefix') format('embedded-opentype'),
+          url('../fonts/icomoon.ttf?f4mtxr') format('truetype'),
+          url('../fonts/icomoon.woff?f4mtxr') format('woff'),
+          url('../fonts/icomoon.svg?f4mtxr#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+.fr .icomoon{
+    font-family: 'icomoon';
+    font-size: 12px;
+    line-height: 12px;
+}
+.header{
+    position: relative;
+    height: 150px;
+    
+}
+.logo{
+    position: absolute;
+    top:50px;
+    left: 400px;
+    width: 80px;
+    height: 80px;
+    background-color:white;
+}
+.header .icomoon{
+    font-family: 'icomoon';
+    font-size: 80px;
+    line-height: 80px;
+    /* 居正中心 */
+    position: absolute;
+    color: #149ceb;
+    text-shadow:0.1em 0.1em 0.3em#149ceb;
+}
+.search{
+    position: absolute;
+    top:80px;
+    left: 720px;
+}
+.tex{
+    float: left;
+    width: 405px;
+    height: 32px;
+    border: 2px solid rgb(12, 123, 197);
+    color: #999;
+    padding-left: 30px;
+}
+.btn{
+    float: left;
+    width: 40px;
+    height: 38px;
+    border: 0 ;
+    background-color:  rgb(12, 123, 197);
+    color:#f1f1f1;
+}
+.hotwords{
+    position: absolute;
+    top: 118px;
+    left: 720px;
+}
+.hotwords a {
+    margin: 0 10px;
+}
+.shopcar{
+    position: absolute;
+    top:70px;
+    background-color: #fff;
+    right: 350px;
+    width: 200px;
+    height: 46px;
+    border: 1px solid #ccc;
+    line-height: 45px;
+    text-align: center;
+    font-size: 22px;
+    border-radius: 10px;
+}
+.car{
+    font-family: 'icomoon';
+    font-size: 28px;
+    color: #166ddf;
+    margin-right: 8px;
+}
+.arrow{
+    font-family: 'icomoon';
+    margin-left: 8px;
+    font-size: 25px;
+}
+.count{
+    position: absolute;
+    top: -9px;
+    left: 100px;
+    background-color: #f70c0c;
+    height: 20px;
+    width: 18px;
+    line-height: 20px;
+    margin: 0 45px;
+    border-radius: 9px 9px 9px 0;
+}
+.nav {
+    height: 45px;
+    width: 100%;
+    border-bottom:2px solid #149ceb;
+}
+.dropdown {
+    width: 210px;
+    height: 45px;
+    background-color: #149ceb;
+}
+.dropdown .dt {
+    height: 100%;
+    width: 100%;
+    background-color:  #076499;
+    color: rgb(245, 244, 244);
+    text-align: center;
+    font-size: 16px;
+    line-height: 45px;
+}
+.dropdown .dd {
+    /* display: none; */
+    width: 210px;
+    height: 500px;
+    background-color: #149ceb;
+    margin-top: 2px;
+}
+
+.meun_item {
+    height: 50px;
+    margin-left: 2px;
+    padding:0 10px;
+    line-height: 50px;
+    transition: all 0.5s;
+}
+.meun_item:hover {
+    padding-left: 20px;
+    background-color: #fff;
+}
+.meun_item:hover a {
+    color: #149ceb;
+}
+.meun_item a{
+    font-size: 14px;
+    color: yellow;
+}
+.meun_item i {
+    float: right;
+    font-size: 14px;
+    color: #fff;
+}
+.navitems {
+    padding-left: 10px;
+}
+.navitems li {
+    float: left;
+}
+.navitems li a{
+    display: block;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 25px;
+    font-size: 16px;
+}
+/* footer */
+.footer{
+    height: 360px;
+    background-color: #fff;
+    padding-top: 30px;
+}
+.mod_service {
+    height: 79px;
+    background-color: #fff;
+    border-bottom: 0.5px solid #149ceb;
+}
+.mod_service li {
+    height: 79px;
+    width: 230px;
+    float: left;
+}
+.mod-icon {
+    height: 50px;
+    width: 50px;
+    float: left;
+    background: url(../img/icons.png) no-repeat;
+    margin-left: 10px;
+}
+.mod_service_zheng{  
+    background-position:  -253px -3px;
+}
+.mod_service_tit {
+    float: left;
+    margin-left: 5px;
+}
+.mod_service_tit h5{
+    margin: 5px 0;
+}
+.mod_service_kuai {
+    background-position: -255px -54px;
+}
+.mod_service_bao {
+    background-position: -257px -105px;
+}
+.mod_help{
+    height: 180px;
+    background-color:#fff ;
+    border-bottom: 0.5px solid #149ceb;
+}
+.mod_help_item {
+    float: left;
+    width: 150px;
+    padding: 20px 0 0 50px;
+}
+.mod_help_item dt{
+    height: 25px;
+    font-size: 20px;
+    padding-left: 20px;
+}
+.mod_help_item dd{
+    padding-top: 2px;
+    height: 22px;
+}
+.mod_app img{
+    width: 70px;
+    height: 90px;  
+}
+.mod_copyright{
+    text-align: center;
+}
+.mod_link{
+    margin: 20px 0 15px 0;
+}

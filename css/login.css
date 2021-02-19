@@ -1,0 +1,120 @@
+body {
+    background: url(../img/bg1.jpg) no-repeat;
+    background-size: cover;
+}
+.login-header{
+    text-align: center;
+    font-size: 20px;
+    color: rgba(9, 194, 240);
+}
+h1 {
+    padding: 0;
+    margin: 0;
+    color: rgba(9, 194, 240);
+}
+.close-login {
+    box-shadow: 0px 0px 30px #f9fbff ;
+    color: #da093d;
+    font-size: 12px;
+}
+.login {
+    display: none; 
+    width: 512px;
+    height: 280px;
+    position: fixed;
+    border: 1px solid #ebebeb ;
+    left: 50%;
+    top: 50%;
+    background: #fff;
+    box-shadow: 0px 0px 25px #fff; 
+    z-index: 99999;  /*一直显示在最前面的，不被别的覆盖*/
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+}
+.login-input-content {
+    margin-top: 20px;
+}
+.login-button {
+    width: 50%;
+    margin: 30px auto 0px auto;
+    line-height: 40px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 10px #ccc;
+    text-align: center;
+}
+.login-button a {
+    display: block;
+}
+.login-input input.list-input {
+    float: left;
+    line-height: 35px;
+    height: 35px;
+    width: 350px;
+    border: 1px solid #ebebeb;
+    text-indent: 5px;
+}
+
+.login-title {
+    width: 100%;
+    margin: 10px 0 0 0;
+    text-align: center;
+    line-height: 40px;
+    height: 40px;
+    font-size: 18px;
+    position: relative;
+    cursor: move;
+}
+.login-input {
+    overflow: hidden;
+    margin: 0 0 20px 0; /*按顺时针方向 上 右 下 左 */
+}
+.login-input label{
+    float: left;
+    width: 90px;
+    padding-right: 10px;
+    text-align: right;
+    line-height: 35px;
+    height: 35px;
+    font-size: 14px;
+}
+.login-title span {
+    position: absolute;
+    font-size: 12px;
+    right: -20px;
+    top: -30px;
+    background-color: #fff;
+    border: 1px solid #ebebeb;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;  /*变圆*/
+}
+.login-bg {
+    display: none; 
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background:url(../img/rihuan.jpg);
+    
+}
+a {
+    text-decoration: none; /*没有文本装饰*/
+    color: #000;
+}
+
+.pwd-eye {
+    float: left;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+	display: table-cell;
+    vertical-align: middle; 
+    margin-left: -35px; 
+}
+.pwd-eye img{
+    margin-top: 9px;
+    width: 20px;
+    height: 20px;
+}
